@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Confirmation page</title>
+            <link rel="stylesheet" href="confirmation.css">
+            
+        </head>
+        <body>
+
+  <div class="ribbon">
+    <h1 class="ribbon-heading">BUY TICKETS</h1>
+    <h3>TICKETS > DETAILS > PAYMENT > <B><u>CONFIRMATION</u></B></h3>
+  </div>
+
+  <div class="link">
+    <a href="Payment.html" class="button2"><b>GO BACK</b></a>
+  </div>
+
+<div class="confirmation-section">
+  <h3>! CONFIRMATION !</h3>
+  <p><b>Thank you for your order. Your purchase is confirmed. Please have this confirmation ready for entry. Here's a quick summary of your order</b></p>
+  <br><br><br>
+</div>
+
+  <table id="ticketTable" border="1">
+    <tr id="NameRow">
+        <td>Name</td>
+        <td id="FullName"></td> 
+    </tr>  
+    <tr>
+        <td>Date</td>
+        <td id="selectedddate"></td>
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td id="selectedtime"></td>
+    </tr>
+    <tr>
+        <td>Duration</td>
+        <td id="selectedduration"></td>
+    </tr>
+    <tr id="mobilenumberRow">
+        <td>Moblie</td>
+        <td id="mobiledata"></td>
+    </tr>
+    <tr id="EmailRow">
+        <td>Email</td>
+        <td id="email"></td>
+    </tr>
+    <tr id="GenderRow">
+        <td>Gender</td>
+        <td id="gender"></td>
+    </tr>
+    <tr>
+        <th>Tickets</th>
+        <th>Charges</th>
+    </tr>
+    <tr id="sladultrow">
+        <td id="localadult"> Sri-Lankan Adult</td>
+        <td id="localadultprice"></td>
+    </tr>
+    <tr id="slchildrow">
+        <td id="localchild"> Sri-Lankan Child</td>
+        <td id="localchildprice"></td>
+    </tr>
+    <tr id="foreignadultrow">
+        <td id="foriegnadult"> Foreigner Adult</td>
+        <td id="foriegnadultprice"></td>
+    </tr>
+    <tr id="foreignchildrow">
+        <td id="foriegnchild"> Foreigner Child</td>
+        <td id="foriegnchildprice"></td>
+    </tr>
+    <tr id="infantrow">
+        <td id="infant"> Infant</td>
+        <td id="infantprice"></td>
+    </tr>
+    <tr>
+        <th>Total Amount </th>
+        <th id="TotalPrice"> $0</th>
+    </tr>
+</table></div>
+
+<script src="confirmation.js"> </script>
+</body>
+</html>

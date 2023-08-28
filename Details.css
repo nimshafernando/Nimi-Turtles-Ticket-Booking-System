@@ -1,0 +1,310 @@
+
+body, h1, h2, h3, p, ul, li, form, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6DA5C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ribbon {
+    background-color: #030056;
+    color: #fff;
+    text-align: center;
+    padding: 30px 60px;
+    position: relative;
+}
+
+.ribbon-heading {
+    margin: 0;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Buttons */
+
+.link2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:2px;
+    margin-left:150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link2:hover {
+    background-color: #0470A9;
+    
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #0470A9;
+}
+
+/* Summary table*/
+.ticketTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: -80px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 500px;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #030056;
+    font-weight: bold;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #e1e1e1;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(n+2) {
+    color: #423cf3;
+    font-weight: bold;
+}
+
+td:nth-child(3) {
+    color: #DC3545;
+}
+
+tr:last-child {
+    border-bottom: 2px solid #0700c8;
+}
+/* Summary table*/
+
+.summary-table {
+    padding: 10px;
+    width: 65%;
+    position: absolute;
+    top: 250px; /* Adjust the top margin */
+    left: 520px; /* Adjust the right margin */
+}
+
+.summary {
+    text-align: center;
+}
+
+
+
+
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form boxes */
+.iti {
+    position: relative;
+    display: inline-block;
+}
+
+input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+
+    position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0;
+    border: 1px solid #CCC;
+    width: 90%;  
+    height: 35px;
+    
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+}
+
+span {
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+
+.success {
+    border: 3px solid green;
+}
+
+.error {
+    border: 3px solid red;
+}
+
+form label {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+form input {
+    display: block;
+    margin: 10px;
+}
+
+.iti__selected-flag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 100%;
+    z-index: 1;
+}
+
+.Header{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 102px;
+    color: rgb(0, 0, 0);
+}
+
+.validbox{
+    border:5px solid #030056;
+    width: 30%;
+    height:20% ;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #96bbc2;
+    margin-left: 25px;
+}
+
+input#name{
+    margin-left: 100px;
+    padding: 6px;
+    width: 60%;
+}
+input#Email{
+    margin-left: 100px;
+    padding: 6px;
+    width: 60%;
+}
+
+input#confirmemail{
+    margin-left: 100px;
+    padding: 6px;
+    width: 60%;
+}
+
+select#gender{
+    margin-left:13px;
+    padding: 6px;
+    width: 20%;
+}
+
+.hidden-row {
+    display: none;
+  }
+
+
+
+@media (max-width: 414px), (max-width: 768px), (max-width: 360px), (max-width: 1440px) {
+
+    .ribbon-heading {
+        font-size: 40px;
+        padding: 20px 40px;
+    }
+
+    .button2 {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .link2 {
+        margin: 10px auto;
+        margin-left: 50px;
+    }
+
+    .summary-table {
+        top: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .validbox {
+        width: 80%;
+        margin-left: 5%;
+        left: 20px;
+    }
+
+    input#name,
+    input#Email,
+    input#confirmemail {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    select#gender {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    input[type=tel] {
+        width:50%;
+    }
+    .Header{
+        margin-left: 30px;
+}
+}

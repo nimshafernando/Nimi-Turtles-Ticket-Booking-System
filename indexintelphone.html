@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="international-telephone-input.css">
+    <title>International Telephone Input</title>
+
+    <style>
+        body {
+            position: absolute;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        ul {
+            top: 100% !important;
+            transform: translateY(0%) !important;
+        }
+
+        .iti {
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type=tel] {
+            padding-right: 6px;
+            padding-left: 52px;
+            margin-left: 0;
+
+            position: relative;
+            z-index: 0;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0;
+            border: 1px solid #CCC;
+            width: 270px;
+            height: 35px;
+            /* padding: 6px 12px; */
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+            color: inherit;
+        }
+
+        button {
+            color: #FFF;
+            background-color: #428BCA;
+            border: 1px solid #357EBD;
+            height: 39px;
+            margin: 0;
+            padding: 6px 20px;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+        }
+
+        button:hover {
+            background-color: #3276B1;
+            border-color: #285E8E;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="phone-label">International Telephone Input</h1>
+    <form>
+        <div class="iti">
+            <input type="tel" name="phone">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="international-telephone-input.js"></script>
+</body>
+</html>

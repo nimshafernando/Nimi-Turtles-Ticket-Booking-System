@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Payment</title>
+            <link rel="stylesheet" href="Payment.css">
+            
+        </head>
+        <body>
+
+  <div class="ribbon">
+    <h1 class="ribbon-heading">BUY TICKETS</h1>
+    <h3>TICKETS> DETAILS ><b><u>PAYMENT</u></b>> CONFIRMATION</h3>
+  </div>
+
+  <div class="link">
+    <a href="details.html" class="button2"><b>GO BACK</b></a>
+  </div>
+
+  <div class="summary-table">
+  <table id="ticketTable" border="1">  
+    <tr>
+        <td>Date</td>
+        <td id="selectedddate"></td>
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td id="selectedtime"></td>
+    </tr>
+    <tr>
+        <td>Duration</td>
+        <td id="selectedduration"></td>
+    </tr>
+    <tr>
+        <th>Tickets</th>
+        <th>Charges</th>
+    </tr>
+    <tr id="sladultrow">
+        <td id="localadult"> Sri-Lankan Adult</td>
+        <td id="localadultprice"></td>
+    </tr>
+    <tr id="slchildrow">
+        <td id="localchild"> Sri-Lankan Child</td>
+        <td id="localchildprice"></td>
+    </tr>
+    <tr id="foreignadultrow">
+        <td id="foriegnadult"> Foreigner Adult</td>
+        <td id="foriegnadultprice"></td>
+    </tr>
+    <tr id="foreignchildrow">
+        <td id="foriegnchild"> Foreigner Child</td>
+        <td id="foriegnchildprice"></td>
+    </tr>
+    <tr id="infantrow">
+        <td id="infant"> Infant</td>
+        <td id="infantprice"></td>
+    </tr>
+    <tr>
+        <th>Total Amount </th>
+        <th id="TotalPrice"> $0</th>
+    </tr>
+</table></div>
+
+
+<form id="recieptform"  action="confirmation.html" method="get">
+
+<div class="Header">
+    <h4>Enter Card Details Below:</h4>
+    </div>
+
+<div class="cardbox">
+<div class="formbox">
+    <label for="cardnumber">Card number</label>
+    <input type="text" id="cardnumber"  name="cardnumber" required>
+    <span></span>
+</div>
+
+<div class="formbox">
+    <label for="expiarydate">Expiry date</label>
+    <input type="text" id="expiarydate"  name="expiarydate" required>
+    <span></span>
+</div>
+
+<div class="formbox">
+    <label for="CVC">CVV</label>
+    <input type="text" id="CVC"  name="CVC" required>
+    <span></span>
+</div>
+
+<div class="formbox">
+    <label for="cardname">Name on card</label>
+    <input type="text" id="cardname"  name="cardname" required>
+    <span></span>
+</div>
+</div>
+<br><button type="submit" id="paybutton">Pay</button>
+
+
+</form>
+
+
+<script src="Payment.js"> </script>
+</body>
+</html>

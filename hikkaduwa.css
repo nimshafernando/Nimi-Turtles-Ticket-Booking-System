@@ -1,0 +1,268 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #6DA5C0;
+}
+
+  
+nav{
+  display: flex;
+  padding: 50px;
+  max-height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #012254;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /*controls the stacking order of elements on the page*/ /*to prevent content overlap with navbar*/
+  /*z-index=1 for the nav bar which places it on top of other elements that have a lower z-index value.*/
+}
+nav img{
+  width: 100px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+/* extra code drop down*/
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+}
+.nav-links ul{
+  float: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px; /*8px is for top and bottom, 12px is for left and right*/
+  position: relative;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: rgb(102, 255, 0);
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+
+}
+
+/*dropdown nav style*/
+.nav-links ul li ul{
+  position: absolute;
+  display: none;
+ /* background-color: rgb(195, 29, 29);*/
+  /*border-radius: 0px 0px 5px 5px;*/
+  
+  
+}
+.nav-links ul li ul li{
+  line-height: 1;
+  width: 140px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  margin-left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li:hover ul{ /*code that lets you get the dropdown*/
+  display: block;
+}
+
+.nav-links ul li ul li a{
+  padding: 10px 16px;
+  
+}
+
+
+
+.text-box{
+  width:90%;
+  color:white;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  z-index: 2;
+  margin-top: 500px;
+}
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin:10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background:transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.hero-btn:hover{
+  border: 3px solid white;
+  background: rgb(4, 134, 241);
+  transition: 1s;
+}
+
+
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+p{
+  color:black;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.row{
+  margin:10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 4px;
+  margin-top:9px;
+
+}
+.course-col{
+  flex-basis: 31%;
+  background:rgb(0, 54, 78);
+  border-radius:10px;
+  margin-bottom:5%;
+  padding: 20px 12px;
+  box-sizing:border-box ;
+  transition: 0.5s;
+  color: white;
+  font-size: 35px;
+}
+h2{
+  text-align: center;
+  font-weight: 600;
+  margin:10px 0;
+}
+.course-col:hover{
+box-shadow: 0 0 20px 0px rgba(198, 28, 28, 0.2);
+}
+hr{
+  width: 80%;
+  margin-left: 9%;
+  margin-right: 5%;
+  margin-top: 30px;
+height:2px;
+ border-top: 5px solid black;
+}
+
+.rekawa{
+  margin:auto;
+  text-align:center;
+  padding-top: 50px;
+  font-size: 20px;
+  margin-top:105px;
+}
+vol{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col1{
+  flex-basis: 31%;
+  background:rgb(0, 48, 68);
+  border-radius:10px;
+  margin-bottom:5%;
+  padding: 20px 12px;
+  box-sizing:border-box ;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin:10px 0;
+}
+  .FOOTER {
+    line-height: 40px;
+    padding: 100px 15%;
+    background: #012254;
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-top: 140px;
+    width: 100%;
+    
+  }
+  .m1 {
+    margin-left: 3%;
+    width: 30%;
+  }
+  .m1 p{
+    color: white;
+  }
+  
+  .m2 {
+    flex-grow: 1.5;
+    margin-left:-100px;
+  }
+  
+  .m2 p{
+    color: white;
+  }
+
+  .link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(10, 3, 78);
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+  }
+  
+  .button2:hover {
+    background-color: #0470a9;
+  }
+  

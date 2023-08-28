@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Details Page</title>
+            <link rel="stylesheet" href="Details.css">
+            <link rel="stylesheet" href="international-telephone-input.css">
+
+
+
+        </head>
+        <body>
+            <div class="ribbon">
+                <h1 class="ribbon-heading">BUY TICKETS</h1>
+                <h3>TICKETS><u><b> DETAILS </b></u> > PAYMENT > CONFIRMATION</h3>
+              </div>
+
+                    
+      <div class="link">
+        <a href="Ticketpage.html" class="button2"><b>GO BACK</b></a>
+      </div>
+
+<div class="summary-table">
+      <table id="ticketTable" border="1">
+        <tr id="NameRow">
+            <td>Name</td>
+            <td id="FullName"></td> 
+        </tr>  
+        <tr>
+            <td>Date</td>
+            <td id="selectedddate"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="selectedtime"></td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td id="selectedduration"></td>
+        </tr>
+        <tr id="mobilenumberRow">
+            <td>Moblie</td>
+            <td id="mobiledata"></td>
+        </tr>
+        <tr id="EmailRow">
+            <td>Email</td>
+            <td id="email"></td>
+        </tr>
+        <tr id="GenderRow">
+            <td>Gender</td>
+            <td id="gender"></td>
+        </tr>
+        <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+        </tr>
+        <tr id="sladultrow">
+            <td id="localadult"> Sri-Lankan Adult</td>
+            <td id="localadultprice"></td>
+        </tr>
+        <tr id="slchildrow">
+            <td id="localchild"> Sri-Lankan Child</td>
+            <td id="localchildprice"></td>
+        </tr>
+        <tr id="foreignadultrow">
+            <td id="foriegnadult"> Foreigner Adult</td>
+            <td id="foriegnadultprice"></td>
+        </tr>
+        <tr id="foreignchildrow">
+            <td id="foriegnchild"> Foreigner Child</td>
+            <td id="foriegnchildprice"></td>
+        </tr>
+        <tr id="infantrow">
+            <td id="infant"> Infant</td>
+            <td id="infantprice"></td>
+        </tr>
+        <tr>
+            <th>Total Amount </th>
+            <th id="TotalPrice"> $0</th>
+        </tr>
+    </table></div>
+
+    
+<div class="Header">
+<h4>Enter the Details Below:</h4>
+</div>
+
+<div class="validbox">
+
+<form id="validationform" method="get" action="Payment.html">
+           
+                
+        <div class="formbox" id="namefeild"> 
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message"></span>
+         </div>
+         
+         <div class="formbox">
+            <label for="phone">
+            <p class="phone-label">Mobile Number:</p>
+            </label>
+         
+         <div class="iti">
+            <input type="tel" name="phone">
+        </div>
+         </div>
+         
+         <div class="formbox" id="emailfeild"> 
+             <label for="Email">Email:</label>
+             <input type="email" id="Email" name="Email" required>
+             <span class="error-message"></span>
+          </div>
+         
+          <div class="formbox" id="confirmEmailfeild"> 
+             <label for="confirmemail">Confirm Email:</label>
+             <input type="email" id="confirmemail" name="confirmemail" required>
+             <span class="error-message"></span>
+          </div>
+         
+          <div class="formbox">
+         <label for="genderr">Gender:</label>
+         <select id="gender" name="gender">
+         <option value="select" selected disabled>Select</option>
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+         </select>
+         </div>
+        </div>
+         
+         
+   <br><br>
+
+    
+        
+    
+    <div class="link2">
+        <button type="submit" id="button3"><b>Continue with Purchase</b>   </button>
+      </div>
+     
+
+
+       <script src="details.js"></script>
+       <script src="international-telephone-input.js"></script>
+      </body>
+
+      
+
+
+      </html>
+      

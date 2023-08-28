@@ -1,0 +1,335 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ 
+}
+.head1{
+font-size:20px;
+text-align: center;
+}
+
+body{
+  background-color: #6DA5C0;
+}
+
+nav{
+  display: flex;
+  padding: 50px;
+  max-height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #012254;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /*controls the stacking order of elements on the page*/ /*to prevent content overlap with navbar*/
+  /*z-index=1 for the nav bar which places it on top of other elements that have a lower z-index value.*/
+}
+nav img{
+  width: 100px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+/* extra code drop down*/
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+}
+.nav-links ul{
+  float: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px; /*8px is for top and bottom, 12px is for left and right*/
+  position: relative;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: rgb(102, 255, 0);
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+
+}
+
+/*dropdown nav style*/
+.nav-links ul li ul{
+  position: absolute;
+  display: none;
+ /* background-color: rgb(195, 29, 29);*/
+  /*border-radius: 0px 0px 5px 5px;*/
+  
+  
+}
+.nav-links ul li ul li{
+  line-height: 1;
+  width: 140px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  margin-left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li:hover ul{ /*code that lets you get the dropdown*/
+  display: block;
+}
+
+.nav-links ul li ul li a{
+  padding: 10px 16px;
+  
+}
+
+
+
+
+/*dropdown nav style*/
+.nav-links ul li ul{
+  position: absolute;
+  display: none;
+ /* background-color: rgb(195, 29, 29);*/
+  /*border-radius: 0px 0px 5px 5px;*/
+  font-size:1px;
+  
+}
+.nav-links ul li ul li{
+  line-height: 1;
+  width: 140px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  margin-left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+nav ul li:hover ul{ /*code that lets you get the dropdown*/
+  display: block;
+}
+
+.nav-links ul li ul li a{
+  padding: 10px 16px;
+  
+}
+
+
+
+ 
+
+.button2{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#012254;
+    color: white;
+  text-decoration:none ;
+  border-radius:4px ;
+   margin-left:560px;
+   margin-top: 50px;
+   border-radius: 25px;
+   border-color: black;
+  
+}
+
+.button2:hover{
+  background-color: #00747f;
+}
+.header1{
+  text-align: center;
+  font-size: 28px;
+  background-color: rgb(47, 146, 233);
+  text-decoration: underline;
+  width: 70%;
+  margin-left: 250px;
+}
+.header2{
+  text-align: left;
+  font-size: 25px;
+ 
+  margin-top:80px;
+}
+
+.kosgodainfo{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.kosgodainfoimage{
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.header22{
+  text-align: left;
+  font-size: 25px;
+  
+  margin-top: -220px;
+}
+
+.kosgodainfo2{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.kosgodainfoimage2{
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+
+.header33{
+  text-align: left;
+  font-size: 25px;
+  
+  margin-top:60px;
+}
+
+.kosgodainfo3{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.kosgodainfoimage3{
+  margin-left: 300px;
+  margin-top: 10px;
+}
+/* for the slideshow*/
+.container{
+  width:400px;
+  height: auto;
+  position: absolute;
+  transform:translate(-50%,-50%);
+  top:100%;
+  left:50%;
+  overflow:hidden;
+  border:20px rgb(12, 12, 12);
+  border-radius: 9px;
+  margin-top:180px;
+  display: flex;
+
+}
+
+.wrapper{
+width:100px;
+height: 400px;
+margin-top: 50px;
+display: flex;
+animation: slide 15s infinite;
+border-radius: 80px;
+}
+img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+/* for the slideshow*/
+.container{
+  width:950px;
+  position: static;
+  transform:translate(-50%,-50%);
+  top:90%;
+  margin-left:720px;
+  margin-top: 400px;
+  overflow:hidden;
+  border:20px rgb(12, 12, 12);
+  border-radius: 20px;
+  
+
+}
+
+.wrapper{
+width:100%;
+height: auto;
+display: flex;
+animation: slide 10s infinite;
+}
+img{
+width:100%;
+height:auto;
+object-fit:cover
+}
+@keyframes slide{
+0%{
+  transform: translateX(0);
+}
+25%{
+  transform: translateX(0);
+}
+30%{
+  transform: translateX(-100%);
+}
+50%{
+  transform: translateX(-100%);
+}
+55%{
+  transform: translateX(-200%);
+}
+75%{
+  transform: translateX(-200%);
+}
+80%{
+  transform: translateX(-300%);
+}
+100%{
+  transform: translateX(-300%);
+}
+}
+/* footer*/
+
+
+.FOOTER {
+  line-height: 40px;
+  padding: 100px 15%;
+  background: #012254;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-top: 140px;
+  width: 100%;
+  
+}
+.m1 {
+  margin-left: 3%;
+  width: 30%;
+}
+.m1 p{
+  color: white;
+}
+
+.m2 {
+  flex-grow: 1.5;
+  margin-left:-100px;
+}
+
+.m2 p{
+  color: white;
+}
+
+
+
+.responsive-image{
+  max-width: 100%;
+  height: auto;
+  width:1000px;
+  height:600px;
+}
+  
+
+

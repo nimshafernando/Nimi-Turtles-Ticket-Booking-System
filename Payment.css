@@ -1,0 +1,388 @@
+
+body, h1, h2, h3, p, ul, li, form, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6DA5C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ribbon {
+    background-color: #030056;
+    color: #fff;
+    text-align: center;
+    padding: 30px 60px;
+    position: relative;
+}
+
+.ribbon-heading {
+    margin: 0;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Buttons */
+
+.link2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:2px;
+    margin-left:150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link2:hover {
+    background-color: #0470A9;
+    
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #0470A9;
+}
+
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    background-color: #6DA5C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ribbon styles */
+.ribbon {
+    background-color: #030056;
+    color: #fff;
+    text-align: center;
+    padding: 30px 60px;
+    position: relative;
+}
+
+.ribbon-heading {
+    margin: 0;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Buttons */
+
+.link2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:2px;
+    margin-left:150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link2:hover {
+    background-color: #0470A9;
+    
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #0470A9;
+}
+
+/* Summary table*/
+.ticketTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: -80px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 500px;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #030056;
+    font-weight: bold;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #e1e1e1;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(n+2) {
+    color: #423cf3;
+    font-weight: bold;
+}
+
+td:nth-child(3) {
+    color: #DC3545;
+}
+
+tr:last-child {
+    border-bottom: 2px solid #0700c8;
+}
+/* Summary table*/
+
+.summary-table {
+    padding: 10px;
+    width: 65%;
+    position: absolute;
+    top: 270px; /* Adjust the top margin  */
+    left: 576px; /* Adjust the right margin  */
+}
+
+.summary {
+    text-align: center;
+}
+
+
+
+/* Form container */
+#recieptform {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card box */
+.cardbox {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    margin-top: 40px;
+    margin-left:-60px;
+}
+
+/* Form box */
+.formbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formbox label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formbox input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.formbox span {
+    color: red;
+    font-size: small;
+}
+
+/* Pay button */
+#paybutton {
+    padding: 10px 20px;
+    background-color: #030056;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 110px;
+}
+
+#paybutton:hover {
+    background-color: #0470A9;
+}
+
+
+.Header{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 1px;
+    color: rgb(0, 0, 0);
+}
+.hidden-row {
+    display: none;
+  }
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ribbon-heading {
+        font-size: 50px;
+    }
+    .button2 {
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .ticketTable {
+        margin-top: -50px;
+    }
+    .summary-table {
+        top: 280px;
+        left:950px;
+    }
+    .cardbox {
+        margin-right: 100px;
+    
+}
+}
+
+@media (min-width: 360px) and (max-width: 412px) {
+    .ribbon-heading {
+        font-size: 45px;
+    }
+    .button2 {
+        margin-top: 10px;
+        margin-left: 17px;
+    }
+    .ticketTable {
+        margin-top: -40px;
+    }
+    .summary-table {
+        top: 950px;
+        left:30px;
+        width: 50%;
+    }
+
+.cardbox {
+    margin-left: 2px;
+    width: 90%
+}
+.Header{
+    margin-left: 20px;
+    text-align: center;
+}
+}
+
+/* iPhone 12 Pro */
+@media (min-width: 390px) and (max-width: 428px) {
+    .ribbon-heading {
+        font-size: 40px;
+    }
+    .button2 {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .ticketTable {
+        margin-top: -20px;
+    }
+    .summary-table {
+        top: 220px;
+        left: 80px;
+        margin-top: 600px;
+    }
+
+
+.cardbox {
+    margin-left: 10px;
+    width: 90%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
