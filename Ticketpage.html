@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tickets page</title>
+            <link rel="stylesheet" href="Ticketpage.css">
+            
+        </head>
+        <body>
+
+  <div class="ribbon">
+    <h1 class="ribbon-heading">BUY TICKETS</h1>
+    <h3><b><u>TICKETS</u></b>> DETAILS > PAYMENT > CONFIRMATION</h3>
+  </div>
+
+  <div class="link">
+    <a href="hikkaduwa.html" class="button2"><b>GO BACK</b></a>
+  </div>
+
+     <!-- Price Table-->
+  <table>
+    <tr>                   
+      <th>Category</th>
+      <th>Normal Hour Charge (USD)</th>
+      <th>Peak Hour Charge (USD)</th>
+    </tr>
+    <tr>
+      <td>Foreigner Adult</td>
+      <td>10</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Foreigner Child</td>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>SL Adult</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>SL Child</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+        <td>Infants</td>
+        <td>Free</td>
+        <td>Free</td>
+    </tr>
+  </table><br><br><br>
+      <hr>  
+      <br><br>    
+     <!-- Price Table-->
+
+     <div class="Wholebox">
+     <!-- Calender-->
+          <form onsubmit="calculateTotalAmount()" get="details.html"  method="get" id="bookingsystem">
+            <div class="Date-selection-Box">
+                <label for="InputDate">When are you visiting?</label>
+                <br>
+        <input type="date" id="InputDate" name="InputDate" required>
+        </div>
+     <!-- Calender-->
+<hr>
+    
+     <section class="Guest-box">
+        <h3>Who will be joining us?</h3>
+        <br>
+        </section>
+
+     <div class="ticket">
+        <label for="slAdult">Sri-Lankan Adult:</label>
+        <input type="number" id="slAdult" name="slAdult" value="0"  min="0"  ><br><br>
+    </div>
+
+    <div class="ticket">
+        <label for="slChild">Sri-Lankan Child:</label>
+        <input type="number" id="slChild" name="slChild" value="0"  min="0" ><br><br>
+    </div>
+
+    <div class="ticket">
+        <label for="ForeignerAdult">Foreigner Adult:</label>
+        <input type="number" id="ForeignerAdult" name="ForeignerAdult" value="0"  min="0" ><br><br>
+    </div>
+
+    <div class="ticket">
+        <label for="ForeignerChild">Foreigner Child:</label>
+        <input type="number" id="ForeignerChild" name="ForeignerChild" value="0"  min="0" ><br><br>
+    </div>
+
+    <div class="ticket">
+        <label for="Infant">Infant:</label>
+        <input type="number" id="Infant" name="Infant" value="0"   min="0" ><br><br>
+    </div>
+    <hr class="double-line">
+    
+
+<div class="Duration-Box">
+    <h3>Choose a timeslot for your visit!</h3>
+    <select id="Duration" name="Duration" multiple onchange="calculateTotalAmount()">
+        <option value="07:00 to 08:00">07:00 AM to 08:00 AM</option>
+        <option value="08:00 to 09:00">08:00 AM to 09:00 AM</option>
+        <option value="09:00 to 10:00">09:00 AM to 10:00 AM</option>
+        <option value="10:00 to 11:00">10:00 AM to 11:00 AM (PEAK)</option>
+        <option value="11:00 to 12:00">11:00 AM to 12:00 PM (PEAK)</option>
+        <option value="12:00 to 13:00">12:00 PM to 01:00 PM (PEAK)</option>
+        <option value="13:00 to 14:00">01:00 PM to 02:00 PM</option>
+        <option value="14:00 to 15:00">02:00 PM to 03:00 PM (PEAK)</option>
+        <option value="15:00 to 16:00">03:00 PM to 04:00 PM (PEAK)</option>
+        <option value="16:00 to 17:00">04:00 PM to 05:00 PM (PEAK)</option>
+        <option value="17:00 to 18:00">05:00 PM to 06:00 PM (PEAK)</option>
+    </select>
+    
+</div>
+
+</form> 
+</div>
+    
+
+<div class="summary-table">
+    
+    <table id="Ticketbox" border="1">  
+        <tr>
+            <td>Date</td>
+            <td id="selectedddate"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="selectedtime"></td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td id="selectedduration"></td>
+        </tr>
+        <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+        </tr>
+        <tr id="sladultrow">
+            <td id="localadult"> Sri-Lankan Adult</td>
+            <td id="localadultprice"></td>
+        </tr>
+        <tr id="slchildrow">
+            <td id="localchild"> Sri-Lankan Child</td>
+            <td id="localchildprice"></td>
+        </tr>
+        <tr id="foreignadultrow">
+            <td id="foriegnadult"> Foreigner Adult</td>
+            <td id="foriegnadultprice"></td>
+        </tr>
+        <tr id="foreignchildrow">
+            <td id="foriegnchild"> Foreigner Child</td>
+            <td id="foriegnchildprice"></td>
+        </tr>
+        <tr id="infantrow">
+            <td id="infant"> Infant</td>
+            <td id="infantprice"></td>
+        </tr>
+        <tr>
+            <th>Total Amount </th>
+            <th id="TotalPrice"> $0</th>
+        </tr>
+    </table>
+</div>
+
+<section class ="BUTTON">
+    <div class="link2">
+        <a href="details.html" class="button3"><b>Continue with Purchase</b></a>
+      </div></section>
+
+ <script src="Ticketpage.js"></script>
+
+</body>
+</html>

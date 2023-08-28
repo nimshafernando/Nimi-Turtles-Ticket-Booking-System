@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+   
+  }
+  .head1{
+  font-size:20px;
+  text-align: center;
+  background-color: rgb(47, 146, 233);
+  text-decoration: underline;
+  width: 50%;
+  margin-left:400px;
+  }
+
+body{
+    background-color: #6DA5C0;
+}
+  
+nav{
+  display: flex;
+  padding: 50px;
+  max-height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #012254;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /*controls the stacking order of elements on the page*/ /*to prevent content overlap with navbar*/
+  /*z-index=1 for the nav bar which places it on top of other elements that have a lower z-index value.*/
+}
+nav img{
+  width: 100px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+/* extra code drop down*/
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+}
+.nav-links ul{
+  float: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px; /*8px is for top and bottom, 12px is for left and right*/
+  position: relative;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: rgb(102, 255, 0);
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+
+}
+
+/*dropdown nav style*/
+.nav-links ul li ul{
+  position: absolute;
+  display: none;
+ /* background-color: rgb(195, 29, 29);*/
+  /*border-radius: 0px 0px 5px 5px;*/
+  
+  
+}
+.nav-links ul li ul li{
+  line-height: 1;
+  width: 140px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  margin-left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li:hover ul{ /*code that lets you get the dropdown*/
+  display: block;
+}
+
+.nav-links ul li ul li a{
+  padding: 10px 16px;
+  
+}
+.info2{
+  text-align: center;
+  margin-left:8%;
+  font-size: 28px;
+  margin-top: 50px;
+}  
+
+.head1{
+font-size:19px;
+text-align: center;
+background-color: rgb(47, 146, 233);
+text-decoration: underline;
+width: 50%;
+margin-left: 400px;
+}
+
+.info{
+    text-align: center;
+    font-size:2vw;
+    margin-top: 25px;
+}
+
+.donate-form{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top:50px;
+    border:2px solid black;
+}
+.donate-form h2{
+    text-align:center;
+    color: #333;
+}
+
+.donate-form form{
+    margin-top: 20px;
+}
+.donate-form label{  
+    display:block;
+    margin-bottom: 5px;
+    color:rgb(0, 0, 0);
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="email"],
+.donate-form input[type="number"],
+.donate-form textarea{
+    width: 100%;
+    padding: 8px;
+    border:1px solid #5f5a5a;
+    border-radius:3px ;
+    resize: vertical;
+}
+.donate-form button[type="submit"]{
+    display:block;
+    width:100%;
+    padding:10px;
+    background-color:#0b135c;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.donate-form button[type="submit"]:hover{
+    background-color: #0b135c;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height:2px;
+   border-top: 5px solid black;
+}
+  
+  .head2{
+    font-size:20px;
+    text-align: center;
+    background-color: rgb(47, 146, 233);
+    text-decoration: underline;
+    width: 50%;
+    margin-left: 380px;
+    margin-top:45px;
+    }
+.head3{
+    font-size:20px;
+    text-align: left;
+    background-color: rgb(47, 146, 233);
+    text-decoration: underline;
+    width: 45%;
+    margin-top: 50px;
+}
+.gifts{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: rgb(255, 255, 255);
+    margin-left:50px;
+}
+.gifts:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+
+}
+.gifts img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.gifts p{
+    text-align: center;
+    
+}
+.gifts h6{
+    font-size: 26px;
+    text-align: center;
+    color: rgb(52, 52, 164);
+    margin: 0;
+}
+button{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(3, 23, 63);
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:20px;
+}
+
+.hello{
+font-size:24px;
+text-align: left;
+margin-top: 10px;
+}
+
+
+.FOOTER {
+  line-height: 40px;
+  padding: 100px 15%;
+  background: #012254;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-top: 140px;
+  width: 100%;
+  
+}
+.m1 {
+  margin-left: 3%;
+  width: 30%;
+}
+.m1 p{
+  color: white;
+}
+
+.m2 {
+  flex-grow: 1.5;
+  margin-left:-100px;
+}
+
+.m2 p{
+  color: white;
+}
+  

@@ -1,0 +1,558 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #6DA5C0;
+}
+.head1{
+font-size:20px;
+text-align: center;
+background-color: rgb(47, 146, 233);
+text-decoration: underline;
+width: 50%;
+margin-left:400px;
+}
+
+  
+nav{
+  display: flex;
+  padding: 50px;
+  max-height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #012254;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /*controls the stacking order of elements on the page*/ /*to prevent content overlap with navbar*/
+  /*z-index=1 for the nav bar which places it on top of other elements that have a lower z-index value.*/
+}
+nav img{
+  width: 100px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+/* extra code drop down*/
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+}
+.nav-links ul{
+  float: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px; /*8px is for top and bottom, 12px is for left and right*/
+  position: relative;
+}
+.nav-links ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: rgb(102, 255, 0);
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+
+}
+
+/*dropdown nav style*/
+.nav-links ul li ul{
+  position: absolute;
+  display: none;
+ /* background-color: rgb(195, 29, 29);*/
+  /*border-radius: 0px 0px 5px 5px;*/
+  
+  
+}
+.nav-links ul li ul li{
+  line-height: 1;
+  width: 140px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  margin-left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li:hover ul{ /*code that lets you get the dropdown*/
+  display: block;
+}
+
+.nav-links ul li ul li a{
+  padding: 10px 16px;
+  
+}
+
+
+
+
+/*threat 1*/
+
+
+.threat1xx{
+    font-size:25px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(47, 146, 233);
+  text-decoration: underline;
+    
+}
+.threat1image{
+    width:100vw;
+    margin-left:620px;
+    margin-top: 25px;
+    height: auto;
+    border: #000000;
+    border-radius: 10px;
+}
+.threat1info{
+    font-size:20px;
+    margin-top: 8px;
+}
+.threats ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+
+.threat1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top:20px;
+  }
+  .threatcon{
+    border: 3px solid #040404;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 217, 255, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    
+  }
+  .threatcon:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  .threatcon img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  
+  .threatcon h1{
+    font-weight: bold;
+    font-size:24px;
+  
+  }
+  
+  .threatcon p{
+    font-size: 80px;
+    color: #000000;
+
+  
+  }
+  
+  .card1 {
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+  
+   
+    padding: 10px;
+
+  }
+  .card1:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  
+  .card1 img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .card1 h1{
+    font-weight: bold;
+    font-size: 24px;
+
+  }
+  
+  .card1 p {
+    font-size: 20px;
+  color:#000000;
+  }
+.card1 ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+  
+.button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#012254;
+      color: white;
+  text-decoration:none ;
+  border-radius:4px ;
+   margin-left:800px;
+   margin-top: 50px;
+}
+
+.button:hover{
+  background-color: #031a02;
+}
+
+/*threat 1*/
+
+/*threat 2*/
+
+.threat2x{
+    font-size:25px;
+    margin-top:45px;
+    text-align: center;
+    background-color: rgb(47, 146, 233);
+  text-decoration: underline;
+}
+.threat2image{
+    width:650px;
+    margin-left:600px;
+    margin-top: 25px;
+    height: auto;
+    border: #012254;
+    border-radius: 10px;
+
+}
+.threat2info{
+    font-size:20px;
+    margin-top:3px;
+}
+.threats2 ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+
+.threat2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top:20px;
+
+  }
+  .threatcon2{
+    border: 3px solid #040404;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 217, 255, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+
+    
+  }
+  .threatcon2:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  .threatcon2 img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  
+  .threatcon2 h1{
+    font-weight: bold;
+    font-size:24px;
+ 
+  }
+  
+  .threatcon2 p{
+    font-size: 80px;
+    color: #000000;
+
+  
+  }
+  
+  .card2 {
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+   
+    padding: 10px;
+  }
+  .card2:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  
+  .card2img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .card2 h1{
+    font-weight: bold;
+    font-size: 24px;
+   
+  }
+  
+  .card2 p {
+    font-size: 20px;
+  color:#000000;
+  }
+.threats2 ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+  
+.button2{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#012254;
+        color: white;
+    text-decoration:none ;
+    border-radius:4px ;
+     margin-left:800px;
+     margin-top: 50px;
+}
+
+.button2:hover{
+  background-color: #031a02;
+}
+
+/*threat 2*/
+  
+/*threat3 */
+
+.threat3xx{
+    font-size:25px;
+    text-align: center;
+    background-color: rgb(47, 146, 233);
+  text-decoration: underline;
+    
+}
+.threat3image{
+    width:550px;
+    margin-left:650px;
+    margin-top: 25px;
+    height: auto;
+    border: #012254;
+    border-radius: 10px;
+}
+.threat3info{
+    font-size:20px;
+    margin-top:3px;
+}
+.threats3 ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+
+.threat3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top:20px;
+
+  }
+  .threatcon3{
+    border: 3px solid #040404;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 217, 255, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    
+  }
+  .threatcon3:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  .threatcon3 img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  
+  .threatcon3 h1{
+    font-weight: bold;
+    font-size:24px;
+
+  }
+  
+  .threatcon3 p{
+    font-size: 80px;
+    color: #000000;
+
+  
+  }
+  
+  .card3 {
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    margin-left: 5%;
+    flex-basis: calc(50% - 10px);
+   
+    padding: 10px;
+  }
+  .card3:hover{
+    box-shadow: 0 10px 10px 0 black;
+  }
+  
+  
+  .card3 img {
+    width: 500px;
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .card3 h1{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .card3 p {
+    font-size: 20px;
+  color:#000000;
+  }
+.threats3 ul {
+    list-style-type:disc;
+  margin-left:20px;
+  font-size:20px;
+  }
+  
+.button3{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#012254;
+      color: white;
+  text-decoration:none ;
+  border-radius:4px ;
+   margin-left:800px;
+   margin-top: 50px;
+}
+
+.button3:hover{
+    background-color: #031a02;
+}
+
+/*threat 3*/
+/* footer*/
+
+
+.FOOTER {
+  line-height: 40px;
+  padding: 100px 15%;
+  background: #012254;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-top: 140px;
+  width: 100%;
+  
+}
+.m1 {
+  margin-left: 3%;
+  width: 30%;
+}
+.m1 p{
+  color: white;
+}
+
+.m2 {
+  flex-grow: 1.5;
+  margin-left:-100px;
+}
+
+.m2 p{
+  color: white;
+}
+
+
+
+.responsive-image{
+  max-width: 100%;
+  height: auto;
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

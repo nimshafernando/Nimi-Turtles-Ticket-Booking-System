@@ -1,0 +1,352 @@
+body, h1, h2, h3, p, ul, li, form, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6DA5C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ribbon {
+    background-color: #030056;
+    color: #fff;
+    text-align: center;
+    padding: 30px 60px;
+    position: relative;
+}
+
+.ribbon-heading {
+    margin: 0;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Buttons */
+
+.button3 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 80px;
+    margin-left: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button3:hover {
+    background-color: #0470A9;
+    
+}
+
+.button2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0A034E;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button2:hover {
+    background-color: #0470A9;
+}
+/* Ticket details box */
+.ticketbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: -80px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 500px;
+}
+
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #030056;
+    font-weight: bold;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #e1e1e1;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(n+2) {
+    color: #423cf3;
+    font-weight: bold;
+}
+
+td:nth-child(3) {
+    color: #DC3545;
+}
+
+tr:last-child {
+    border-bottom: 2px solid #030056;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #030056;
+    width: 40%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.calendar {
+    width: 40%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+}
+
+.time-slotbox {
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -60px;
+  
+}
+
+/* Summary table styles */
+.summary-table {
+    padding: 10px;
+    width: 65%;
+    position: absolute;
+    top: 680px; 
+    left: 550px; 
+}
+
+.summary {
+    text-align: center;
+}
+
+
+
+
+.hidden-row {
+    display: none;
+  }
+  
+  #ticketTable {
+    border-collapse: collapse;
+  }
+  
+
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+   
+}
+
+td {
+    border: 1px solid 0;
+}
+.Wholebox {
+    margin: 30px auto;
+    width: 30%;
+    height: 40%;
+    padding: 1px;
+    border: 2px solid #030056;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+}
+
+/* Date selection box */
+.Date-selection-Box {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Guest details section */
+.Guest-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Guest-box h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ticket {
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.ticket label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.ticket input[type="number"] {
+    width: 50px;
+    margin-right: 40px;
+}
+
+/* Duration box */
+.Duration-Box {
+    text-align: center;
+}
+
+.Duration-Box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Duration-Box select {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#bookingsystem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}  
+
+.hidden-row {
+    display: none;
+  }
+  
+
+
+
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 991px) {
+
+    .Wholebox {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .ribbon-heading {
+        font-size: 40px;
+    }
+
+    .button2 {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
+table{
+    margin-top: 60px;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 767px) {
+
+    .Wholebox {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .ribbon-heading {
+        font-size: 30px;
+    }
+
+    .button2 {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .button3 {
+        margin: 10px auto;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .summary-table {
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        position: static;
+    }
+    table{
+        margin-top: 50px;
+    }
+}
+
